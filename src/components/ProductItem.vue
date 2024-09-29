@@ -23,7 +23,7 @@ const props = defineProps<{
 const router = useRouter();
 
 const viewDetails = () => {
-  router.push({ name: 'ProductDetail', params: { id: props.id } }); // id 전달
+  router.push({ name: 'ProductDetail', params: { id: props.id } });
 };
 
 const imageSrc = new URL(`../assets/${props.image}`, import.meta.url).href;
